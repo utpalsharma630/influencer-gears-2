@@ -156,8 +156,30 @@ main{
     font-weight: 600;
     color: gray;
 }
+/* featured design styles*/
 
-
+.featured{
+    display: flex;
+    gap: 96px;
+    align-items: center;
+}
+.featured-title-name{
+    font-size: 2.3rem;
+    font-weight: 600;
+    color:rgba(10, 8, 38, 1) ;
+    margin: 0;
+}
+.featured-description{
+    font-size: 1rem;
+    font-weight: 600;
+    color:rgba(108, 108, 108, 1);
+}
+.secondary-btn{
+    border-radius: 0;
+}
+.featured-image{
+    width: 100%;
+}
 
 /* small device with responsive design */
 
@@ -193,6 +215,10 @@ main{
     }
     .cards{
         grid-template-columns: repeat(1,1fr);
+    }
+    .featured{
+        flex-direction: column-reverse;
+        text-align: center;
     }
 }
 /* medium device with responsive design */
