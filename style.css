@@ -156,6 +156,14 @@ main{
     font-weight: 600;
     color: gray;
 }
+
+.batton{
+    color:rgba(224, 44, 109, 0.87) ;
+    text-align: right;
+    
+}
+
+
 /* featured design styles*/
 
 .featured{
@@ -181,6 +189,28 @@ main{
     width: 100%;
 }
 
+/* footer section design */
+    .footer-container{
+        background-color: black;
+        color:rgba(255, 255, 255, 1) ;
+        margin-bottom: 20px;
+        padding: 50px 0;
+        text-align: center;
+    }
+    .footer-title-name{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color:rgba(255, 255, 255, 1) ;
+    }
+    .footer-description{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .footer-icon{
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+    }
 /* small device with responsive design */
 
 @media screen and (max-width:576px) {
@@ -220,6 +250,9 @@ main{
         flex-direction: column-reverse;
         text-align: center;
     }
+    .featured-image img{
+    width: 100%;
+}
 }
 /* medium device with responsive design */
 @media screen and (min-width:576px) and (max-width:992px) {
