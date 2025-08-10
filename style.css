@@ -53,7 +53,6 @@ header{
 /* banner section design */
 .banner{
     display: flex;
-    /* gap: 130px; */
     justify-content: space-between;
     align-items: center;
     margin-top: 80px;
@@ -63,7 +62,7 @@ header{
     
 }
 .banner-content{
-    max-width: 50%;
+    max-width: 60%;
     
 }
 .banner-title-name{
@@ -87,7 +86,26 @@ header{
 }
 .banner-image img{
     width: 100%;
+    
+
 }
+/* main section started */
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.company-names{
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    align-items: center;
+    justify-content: center;
+    /* justify-items: center; */
+}
+.company-names a img{
+    max-width: 100%;
+}
+/* small device with responsive design */
 
 @media screen and (max-width:576px) {
     .nav-res{
@@ -113,5 +131,20 @@ header{
     .banner-description{
         font-size: 14px;
         font-weight: 500;
+    }
+    .company-names{
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+}
+/* medium device with responsive design */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .banner-content{
+    max-width: 45%;
+}
+.banner-title-name{
+        font-size: 1.8rem;
+        
     }
 }
